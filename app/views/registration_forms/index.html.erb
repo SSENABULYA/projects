@@ -1,0 +1,37 @@
+<h1>click to register</h1>
+
+<table border="2%">
+  <thead>
+    <tr>
+      <th>Last name</th>
+      <th>First name</th>
+      <th>Country</th>
+      <th>City</th>
+      <th>Telephone number</th>
+      <th>Street</th>
+      <th>Email</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registration_forms.each do |registration_form| %>
+      <tr>
+        <td><%= registration_form.last_Name %></td>
+        <td><%= registration_form.first_Name %></td>
+        <td><%= registration_form.country %></td>
+        <td><%= registration_form.city %></td>
+        <td><%= registration_form.telephone_Number %></td>
+        <td><%= registration_form.street %></td>
+        <td><%= registration_form.email %></td>
+        <td><%= link_to 'Show', registration_form %></td>
+        <td><%= link_to 'Edit', edit_registration_form_path(registration_form) %></td>
+        <td><%= link_to 'Destroy', registration_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'click to register as a new user', new_registration_form_path %>

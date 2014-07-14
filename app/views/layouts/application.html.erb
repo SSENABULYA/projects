@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>always the best</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<img >
+
+
+
+
+	<%=render 'layouts/header'%>
+	<a href="/wilson/index/" class="btn btn-primary">Home</a>
+
+	<a href="/wilson/Profile/" class="btn btn-primary">Profile</a>
+
+	<a href="/wilson/Settings/" class="btn btn-primary">Settings</a>
+
+	<a href="/wilson/Applications/" class="btn btn-primary">Applications</a>
+
+	<a href="/wilson/UpcomingEvents/" class="btn btn-primary">UpcomingEvents</a>
+
+	<a href="/wilson/AboutUs/" class="btn btn-primary">AboutUs</a>
+
+	<a href="/wilson/Services/" class="btn btn-primary">Services</a>
+
+	<a href="/regstration_forms/regstration_forms/" class="btn btn-primary">Forms</a>
+
+	<a href="/wilson/Comments/" class="btn btn-primary">Comments</a>
+
+	<a href="/wilson/Help/" class="btn btn-primary">Help</a>
+
+
+
+
+
+       
+
+<%= yield %>
+
+
+<ul class="pager">
+	<li>
+		<a href="" class="btn btn-primary">Previous Page</a>
+
+	</li>
+	
+	<li>
+		<a href="" class="btn btn-primary">Current Page</a>
+
+	</li>
+
+	<li>
+		<a href="" class="btn btn-primary">Next Page</a>
+
+	</li>
+
+
+        
+        
+</ul
+<%=render 'layouts/footer'%>
+
+
+
+</body>
+</html>

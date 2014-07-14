@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @registration_form.last_Name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @registration_form.first_Name %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @registration_form.country %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @registration_form.city %>
+</p>
+
+<p>
+  <strong>Telephone number:</strong>
+  <%= @registration_form.telephone_Number %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @registration_form.street %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @registration_form.email %>
+</p>
+
+<%= link_to 'Edit', edit_registration_form_path(@registration_form) %> |
+<%= link_to 'Back', registration_forms_path %>
