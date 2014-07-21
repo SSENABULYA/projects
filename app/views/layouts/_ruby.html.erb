@@ -1,3 +1,4 @@
+
 <ruby>
 	<div class="well" style ="text-align:center; font-size:50px;"> TOPBRAINZ AFRIKA MAGAZINE</div>
 	<div class="row">
@@ -14,27 +15,41 @@
 		</div>
 
 	</div>
-	<div >
-		<ul class="nav nav-tabs">
-			<li> <%= link_to "Home", '/ruby/index'%></li>
-			<li> <%= link_to "Profile", '/ruby/profile'%></li>
-			<li> <%= link_to "Services", '/ruby/services'%></li>
-			<li> <%= link_to "ContactUs", '/ruby/contactUs'%></li>
-			<li> <%= link_to "Gallery", '/ruby/gallery'%></li>
-			<li> <%= link_to "Comment", '/ruby/comment'%></li>
-			<li> <%= link_to "Advertisement", '/ruby/advertisement'%></li>
+	<div class="navbar navbar-fixed -top navbar-inverse">
+		<div class="navbar-inner">
 
-			<form class="navbar-form ">
-				<input type="text" class="span6" id="">
-				<button type="text" class="btn btn-primary"> search</button>
+			<ul class="nav">
+				<li><%= link_to "Home", root_path %></li>
+				<li><%= link_to "Profile", ruby_profile_path %></li>
+				<li><%= link_to "About Us",ruby_about_path %></li>
+				<li><%= link_to "ContactUs", ruby_contactUs_path %></li>
+				<li><%= link_to "Services", ruby_services_path %></li>
+				<li><%= link_to "Gallery", ruby_gallery_path %></li>
+				<li><%= link_to "UpcomingEvents",ruby_upcomingEvents_path %></li>
+				<li><%= link_to "Comment",ruby_comment_path %></li>
+				<li>
+					<form class="navbar-form">
+						<input type="text" class ="span1">
+						<button type="text" class ="btn btn_primary" >Search
+
+						</button>
 
 
-			</form>
+					</form>
+
+				</li>
+				<li><%= link_to "SignIn", new_admin_session_path, :class => "pull-right offset1" %></li>
+
+				<li><%= link_to "SignOut", destroy_admin_session_path, :method => :delete,:class => "pull-right offset1" %></li>
 
 
 
-		</ul>
+			</ul>
+
+		</div>
 
 	</div>
+
+
 
 </ruby>

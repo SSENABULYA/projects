@@ -5,11 +5,15 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+#gives the admin panel
+gem 'rails_admin'
+
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+#for signin and signup
 gem 'devise'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

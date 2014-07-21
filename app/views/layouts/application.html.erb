@@ -11,7 +11,9 @@
 
 </head>
 <body>
-	<%= render 'layouts/ruby' %>
+	<%= render :partial =>'layouts/ruby' %>
+	<p class= "notice"><%= notice %></p>
+	<p class= "alert"><%= alert %></p>
 
 <%= yield %>
 
