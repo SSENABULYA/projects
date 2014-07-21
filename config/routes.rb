@@ -1,17 +1,31 @@
 Rails.application.routes.draw do
   
-  root 'wilson#index'
+  get 'ruby/index'
+  get 'ruby/about'
+  get 'ruby/comment'
+  get 'ruby/gallery'
+  get 'ruby/contactUs'
+  get 'ruby/profile'
+  get 'ruby/services'
+  get 'ruby/advertisement'
+  get 'ruby/upcomingEvents'
+
+
+  #get 'home/index'
+
+  devise_for :admins
+  #root 'wilson#index'
   
-  get 'wilson/index'
-  get 'wilson/Profile'
-  get 'wilson/Settings'
-  get 'wilson/Applications'
-  get 'wilson/UpcomingEvents'
-  get 'wilson/AboutUs'
-  get 'wilson/Services'
-  get 'wilson/Forms'
-  get 'wilson/Help'
-  get 'wilson/Comments'
+  #get 'wilson/index'
+  #get 'wilson/Profile'
+  #get 'wilson/Settings'
+  #get 'wilson/Applications'
+  #get 'wilson/UpcomingEvents'
+  #get 'wilson/AboutUs'
+  #get 'wilson/Services'
+  #get 'wilson/Forms'
+  #get 'wilson/Help'
+  #get 'wilson/Comments'
 
 
 
@@ -29,7 +43,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   #root 'registration_forms#index'
+   root 'ruby#index'
 
 
 
